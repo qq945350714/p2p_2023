@@ -19,7 +19,7 @@ suite.addTest(unittest.makeSuite(tender))
 suite.addTest(unittest.makeSuite(mytender))
 
 
-report_file = base_dir + "/report/report.html")
+report_file = base_dir + "/report/report.html"
 with open(file=report_file,mode="wb") as f:
     runner = HTMLTestRunner(f, title="p2p测试报告")
     runner.run(suite)
