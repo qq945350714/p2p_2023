@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdeec198-16a2-407f-9a30-343259dd6c16" name="Default Changelist" comment="" />
+    <list default="true" id="cdeec198-16a2-407f-9a30-343259dd6c16" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_suite.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run_suite.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
+            <state relative-caret-position="496">
               <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -55,11 +58,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script/tender.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+            <state relative-caret-position="135">
+              <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,7 +95,6 @@
         <option value="$PROJECT_DIR$/api/trust_api.py" />
         <option value="$PROJECT_DIR$/api/tender_api.py" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/run_suite.py" />
         <option value="$PROJECT_DIR$/script/tender.py" />
         <option value="$PROJECT_DIR$/script/trust.py" />
         <option value="$PROJECT_DIR$/data/imgcode_data.json" />
@@ -102,6 +107,7 @@
         <option value="$PROJECT_DIR$/script/login_param.py" />
         <option value="$PROJECT_DIR$/script/login.py" />
         <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/run_suite.py" />
       </list>
     </option>
   </component>
@@ -125,27 +131,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="p2p" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p2p" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="p2p" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p2p" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="p2p" type="b2602c69:ProjectViewProjectNode" />
-              <item name="p2p" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -280,6 +266,14 @@
       <option name="presentableId" value="Default" />
       <updated>1678783739808</updated>
     </task>
+    <task id="LOCAL-00001" summary="001">
+      <created>1679034933220</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679034933220</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -316,6 +310,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11959958" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -327,7 +322,7 @@
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32936078" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4978678" weight="0.32934782" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.27765727" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.23210412" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -336,6 +331,10 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="001" />
+    <option name="LAST_COMMIT_MESSAGE" value="001" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/api/__init__.py">
@@ -639,20 +638,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_suite.py">
+    <entry file="file://$PROJECT_DIR$/script/tender.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="135">
+          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/tender.py">
+    <entry file="file://$PROJECT_DIR$/run_suite.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        <state relative-caret-position="496">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
