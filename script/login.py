@@ -38,6 +38,7 @@ class login(unittest.TestCase):
         response1 = self.login.get_imgcode(self.session, str(self.r))
 
         response2 = self.login.get_smscode(self.session, phone, self.imgVerifyCode)
+        print(response2.text)
         response3 = self.login.get_register(self.session, phone, pwd, imgVerifyCode, phoneCode)
         assert_utils(self, response3, status_code, status, description)
 
