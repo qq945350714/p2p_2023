@@ -200,9 +200,9 @@
         
     <div class='page-header'>
         <h1>p2p测试报告</h1>
-    <p class='attribute'><strong>开始时间:</strong> 2023-03-16 16:41:41</p>
-<p class='attribute'><strong>运行时长:</strong> 0:00:04.742619</p>
-<p class='attribute'><strong>状态:</strong> 通过 13</p>
+    <p class='attribute'><strong>开始时间:</strong> 2023-03-17 15:29:49</p>
+<p class='attribute'><strong>运行时长:</strong> 0:00:06.149883</p>
+<p class='attribute'><strong>状态:</strong> 通过 16 失败 3</p>
 
     </div>
     <div style="float: left;width:50%;"><p class='description'></p></div>
@@ -233,47 +233,52 @@
             <td>查看</td>
         </tr>
         
-    <tr class='passClass'>
+    <tr class='failClass'>
         <td>script.login.login</td>
-        <td>4</td>
-        <td>4</td>
+        <td>10</td>
+        <td>7</td>
+        <td>3</td>
         <td>0</td>
-        <td>0</td>
-        <td><a href="javascript:showClassDetail('c1',4)">详情</a></td>
+        <td><a href="javascript:showClassDetail('c1',10)">详情</a></td>
     </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_get_imgcode</div></td>
+    <td class='none'><div class='testcase'>test_001get_imgcode</div></td>
     <td colspan='5' align='center'>通过</td>
 </tr>
 
 <tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_get_login</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
-        通过</a>
-
-    <div id='div_pt1.2' class="popup_window">
-        <pre>pt1.2: {'status': 200, 'description': '登录成功'}
-</pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+    <td class='none'><div class='testcase'>test_002get_smscode</div></td>
+    <td colspan='5' align='center'>通过</td>
 </tr>
 
 <tr id='pt1.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_get_register</div></td>
+    <td class='none'><div class='testcase'>test_003get_register_0_13124523341</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_003get_register_1_13124523342</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+<tr id='ft1.5' class='none'>
+    <td class='failCase'><div class='testcase'>test_003get_register_2_13124523343</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
-        通过</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.5')" >
+        失败</a>
 
-    <div id='div_pt1.3' class="popup_window">
-        <pre>pt1.3: {'status': 100, 'description': '手机已存在!'}
+    <div id='div_ft1.5' class="popup_window">
+        <pre>ft1.5: Traceback (most recent call last):
+  File "F:\Python\lib\site-packages\parameterized\parameterized.py", line 530, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "G:\整理后的测试文件\讲义\笔记\金融项目\代码\python\p2p\script\login.py", line 42, in test_003get_register
+    assert_utils(self, response3, status_code, status, description)
+  File "G:\整理后的测试文件\讲义\笔记\金融项目\代码\python\p2p\utils.py", line 13, in assert_utils
+    self.assertEqual(status, response.json().get("status"))
+AssertionError: 100 != 200
 </pre>
     </div>
     <!--css div popup end-->
@@ -281,9 +286,79 @@
     </td>
 </tr>
 
-<tr id='pt1.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_get_smscode</div></td>
+<tr id='ft1.6' class='none'>
+    <td class='failCase'><div class='testcase'>test_003get_register_3_13124523344</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.6')" >
+        失败</a>
+
+    <div id='div_ft1.6' class="popup_window">
+        <pre>ft1.6: Traceback (most recent call last):
+  File "F:\Python\lib\site-packages\parameterized\parameterized.py", line 530, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "G:\整理后的测试文件\讲义\笔记\金融项目\代码\python\p2p\script\login.py", line 42, in test_003get_register
+    assert_utils(self, response3, status_code, status, description)
+  File "G:\整理后的测试文件\讲义\笔记\金融项目\代码\python\p2p\utils.py", line 13, in assert_utils
+    self.assertEqual(status, response.json().get("status"))
+AssertionError: 100 != 200
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_003get_register_4_13124523345</div></td>
     <td colspan='5' align='center'>通过</td>
+</tr>
+
+<tr id='pt1.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_003get_register_5_13124523346</div></td>
+    <td colspan='5' align='center'>通过</td>
+</tr>
+
+<tr id='ft1.9' class='none'>
+    <td class='failCase'><div class='testcase'>test_003get_register_6_13124523347</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.9')" >
+        失败</a>
+
+    <div id='div_ft1.9' class="popup_window">
+        <pre>ft1.9: Traceback (most recent call last):
+  File "F:\Python\lib\site-packages\parameterized\parameterized.py", line 530, in standalone_func
+    return func(*(a + p.args), **p.kwargs)
+  File "G:\整理后的测试文件\讲义\笔记\金融项目\代码\python\p2p\script\login.py", line 42, in test_003get_register
+    assert_utils(self, response3, status_code, status, description)
+  File "G:\整理后的测试文件\讲义\笔记\金融项目\代码\python\p2p\utils.py", line 13, in assert_utils
+    self.assertEqual(status, response.json().get("status"))
+AssertionError: 100 != 200
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.10' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_004get_login</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.10')" >
+        通过</a>
+
+    <div id='div_pt1.10' class="popup_window">
+        <pre>pt1.10: {'status': 200, 'description': '登录成功'}
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
 </tr>
 
     <tr class='passClass'>
@@ -358,15 +433,13 @@ UserRegister OK
 �� �   } !1AQa"q2���#B��R��$3br�	
 %&amp;'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz���������������������������������������������������������������������������        	
 �� �  w !1AQaq"2�B����	#3R�br�
-$4�%�&amp;'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz��������������������������������������������������������������������������   ? �MB���4}4�3����Џ.0pJ�ԓ�==��S��F�d�sr�i#&lt;o+�ܫ���A����׬u%���4�RᣌE,2/p#8�8&lt;t V&lt;��?��*��D�2�n�!��19#�ⷱ
-�Y��4s�e�A��J�`�XӦ�������_k:v����.C�R�&gt;���l��R�U:�n�o��
-Ѽ@� �N���8`�F���j�k/��ȏ+G���`n�8�=q��W@�,/�1e9p����H�q����_�R����aTf
-A,pr����Q�x��\FD����"b&lt;��ө�h�r^Ɲ��K洨��B��vH ���[����Xz���4�z|�C)�&lt;��r� !�`~bF1Ӟ��ޏc�9#yI��W&lt;�Q�q���� �&gt;-Y�nn.��0]�$)�Q������hQӴ�g����M@^��.ᔻr .[���z�gL�dV�]��*�Z�cIQy�s�ӯNEe�r�Mu��jP�`vv
-���n�#$ƭ�*=&lt;%˘���w1Ƽ`g�''�9��:+?iw�	a�L��ۇϠ^��3����.�	r�h�h�T�n��@M����=sX04B&amp;X�Z@��F[صty|�n��09%���L}�s�OLRbk��&lt;�yԤ�H&gt;B @A� Ƿ&lt;�s���Q�A9��Cb0F�;I�����$�23�r}s\���ZY_j�~�)�sxӣ;	s���W^@=Fj�ލ�_�%��Id͜�&gt;��:��\KFa���Z�[*���q���2���`���靛��}:𢱒$vA"���@��������lmHmT�
-3�&gt;P0x9���x�T'�y�O��6�DV��#R���?{��v�ա�"��0h.���V;���:d9�v��]x����A�;q��&amp;A��  ~��|-�m��2��;��Ǡ?�+Z��Me�T�Q���x�m��}��Fh��5u*�SӍ��mm�e#�����\��MGb�]�ybYd*B�8f\��9&lt;g�+n��9浚ٮ�vy�&lt;��b��rq�����La)�D���s���3�rB�=v�OzZ�40��
-{9.5�����8�j�@���t�@Ƿ�0s&lt;Q�i��n&amp;[���G���O9#��&gt;�����Z���ڠ*�*���@0 �=ex�ImoG�T;��8���8����\r?����3�LB����c�7�M��9 ���8��v��)%��;�&lt;�� g���� ~��Uk}gY֠�$Zj�K�d�����	U#9�&gt;�=kb���L���%_$m�T�zw&gt;���J]��˫�&lt;��,����ۓ��zM�&amp;��-��g.F������ �|��VBbf� ����k� �m5Ymm�X�,`��Ts�^�QNM�4���H�����pz�3os۩�����V����(:�E����x.{M�a�3�g�x{U���]2i[Υ�F�#oA��ך(��OB��_w��*0��`�|�
-@ۿ�+�R���M�B�^vr�\���Pu�z(��WH;//Վ��MGH����J�|�8$ rR8���u��r�
-(���9��]�&lt;��,���蒺���?(������
+$4�%�&amp;'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz��������������������������������������������������������������������������   ? ���.�]S�ͥ\H�k{���� ����tu�k����,0��q,񎞋��y$t�iScY�t�k[��#�o�P!?tw?�?Z��5V�򠷏̻�����P:���sK��'�C��#�#�p7s���G��մ��I5&lt;&lt;��ǈ�� F2Ė�y$Q�9��{hJ}�����ݣ]]��u*�@T܄�L��&lt;zWOoo�m)��̕ߧ��q\]Ƴq�][2����c�[-��M3R�Q��ow;U�HRFy�!s�qDf�v��҃��#�Y~!���E�x%�6 @$���/��6�����Fu3�=�y��&gt;��V�д�x�[V��BS�Vf��NN8^���ۓ����4�J�� ��i$t���`Cw�n�A����q�� �x�";��&amp;H�����v����:m�(T�-I�G$��?��@��sQ�+�a���Bx�s�g�� �䝒v�)�Vڮ�����o��,�qО� B+_����R2��_#8��
+29�\���gw��ۉ�F4����9$�R+rm^c^*��q�%x�y��%~�)h\����|��$
+T�6|�qӞ��qڊ�.���Ga:v�(r���w]Y:zJ��N�bB9�灰pq�A?�9��&lt;?q&lt;���V$�腁d�H�v��]{ɆB~n�ݳ�~#���,P4���;qߐ@&lt;���N&lt;�[��s���si��qh��=���W8:�71�'�x=�+���Xؠ^�t�!���r��UL���\�_`2p:�SP;,7�V�2��Pa������������'�Q�&lt;�&amp;����8��1���,���O��[{H�*�p����==���I��&lt;L�M�F���X�0r2O&gt;ޕ�m%����a��eb`s���|���T(=/Д�ѻ�msi4���FbU@��q���g/��շ�k,����d�za�^s�g�f��h�i�uu9\�14J&gt;������Z�闗�h_8����
+����yOL�nf
+��Zi-4�,�w��� �t,��1��z���*)E槮�i�e���duvr:��}�3]E��p�m�H�vQ׶O��g� �.a������(�G&lt;c#���e�8�5]��G��v/:Ǒ3`� ��OJ�Э��G�"��1��������̓j7�^���
+�}v���U���K�QEc(Q� ��-P0�p�!�o�I8�8�ǯ��^�N����,��~UN�'%H�#��w�4QN:�&amp;'𲮥�ڙ�$6�'�X
+�ie���E�#2�d�8*�Nq��Ee���oGp�#�z*��S���,(�� (�� (�� ��
 </pre>
     </div>
     <!--css div popup end-->
@@ -410,7 +483,7 @@ A,pr����Q�x��\FD����"b&lt;��ө�h�r^Ɲ��K�
 
     <div id='div_pt4.1' class="popup_window">
         <pre>pt4.1: {'status': 200, 'description': '登录成功'}
-{"status":200,"data":{"attachment_ids":"","loan_info":{"tender_count":"31","add_date":"2020-05-07","tender_amount_min":1000.00,"wait_amount":"158000.00","use":"周转","period_name":"60个月","award_status":-1,"additional_amount_max":0.00,"serialno":"202301321111","isCert":"2","overdue_time":"2021-01-01 19:36:53","password_status":false,"category_id":"1","additional_name":"null+0.00%","id":"222","catePic":"http://imgv-p2p-test.itheima.net/loan/borrowtype/20191008/f5249edf-ec06-40c9-b56d-d0bd65cc4f89.png","validate":10,"member_id":"222","period":"60","apr":"7.55","amount":"222000.00","status_name":"借款到期未满标","category_type":"1","deposit_certificate":"-1","additional_status":-1,"member_name":"13130785533","vouch_company_id":"0","is_auto":1,"hits":55,"contents":"6","credited_amount":"64000.00","name":"数据库构造借款1","progress":"28.83","tender_amount_max":10000.00,"repay_type":"1","hidden_status":"1","is_company":-1,"additional_apr":0.00,"tenderNum":"31","status":"-2"},"member_approve":{"is_email":"no","is_phone":"yes","is_realname":"yes","is_lock":"yes","username":"13130785533"},"company_info":{},"member_info":{"member_id":222,"birthday":"1995-09-29","industry_name":"未填","gender":"男","company_scale_name":"未填","member_name":"19876545432","marry_name":"未填","card_id":"110105199509291634","realname":"呵**","edu_name":"未填","graduated":"未填","imgPath":"http://imgv-p2p-test.itheima.net","monthly_income_name":"未填","id":215,"company_office_name":"未填"},"member_loan_info":{"late_amount":0,"late_repay":0,"late_repay_max":0,"loan_success_amount":0,"interestTotal":4453.70,"loan_count":1,"repay_success_count":0,"loan_success_count":0,"wait_repay_total":0},"comList":[],"iscompany":"-1","attaList":[],"companyPic":"","member":{"lastlogin_time":1678956102,"role":1,"group_status":2,"is_id5":-1,"register_time":1678956101,"id":20620,"register_ip":3056512971,"is_login":1,"group":1,"is_email":-1,"credit_point":0,"amount":0.00,"is_phone":1,"is_vip":-1,"can_tender_new":1,"count":7,"lastlogin_date":"三月 16, 2023","is_realname":1,"register_date":"三月 16, 2023","is_auto":"-1","register_type":1,"is_video":-1,"self_loan":-1,"phone":13124523346,"balance_amount":10000000.00,"name":"13124523346","lastlogin_ip":3056512971,"status":1},"repay_type":{"contents":"月还款本息\u003d贷款本金×月利率×（1 月利率）还款月数/[（1 月利率）还款月数-1]","name":"等额本息","remark":"","id":1}},"description":"OK"}
+{"status":200,"data":{"attachment_ids":"","loan_info":{"tender_count":"39","add_date":"2020-05-07","tender_amount_min":1000.00,"wait_amount":"114000.00","use":"周转","period_name":"60个月","award_status":-1,"additional_amount_max":0.00,"serialno":"202301321111","isCert":"2","overdue_time":"2021-01-01 19:36:53","password_status":false,"category_id":"1","additional_name":"null+0.00%","id":"222","catePic":"http://imgv-p2p-test.itheima.net/loan/borrowtype/20191008/f5249edf-ec06-40c9-b56d-d0bd65cc4f89.png","validate":10,"member_id":"222","period":"60","apr":"7.55","amount":"222000.00","status_name":"借款到期未满标","category_type":"1","deposit_certificate":"-1","additional_status":-1,"member_name":"13130785533","vouch_company_id":"0","is_auto":1,"hits":63,"contents":"6","credited_amount":"108000.00","name":"数据库构造借款1","progress":"48.65","tender_amount_max":10000.00,"repay_type":"1","hidden_status":"1","is_company":-1,"additional_apr":0.00,"tenderNum":"39","status":"-2"},"member_approve":{"is_email":"no","is_phone":"yes","is_realname":"yes","is_lock":"yes","username":"13130785533"},"company_info":{},"member_info":{"member_id":222,"birthday":"1995-09-29","industry_name":"未填","gender":"男","company_scale_name":"未填","member_name":"19876545432","marry_name":"未填","card_id":"110105199509291634","realname":"呵**","edu_name":"未填","graduated":"未填","imgPath":"http://imgv-p2p-test.itheima.net","monthly_income_name":"未填","id":215,"company_office_name":"未填"},"member_loan_info":{"late_amount":0,"late_repay":0,"late_repay_max":0,"loan_success_amount":0,"interestTotal":4453.70,"loan_count":1,"repay_success_count":0,"loan_success_count":0,"wait_repay_total":0},"comList":[],"iscompany":"-1","attaList":[],"companyPic":"","member":{"lastlogin_time":1679038191,"role":1,"group_status":2,"is_id5":-1,"register_time":1679038190,"id":20776,"register_ip":3056512971,"is_login":1,"group":1,"is_email":-1,"credit_point":0,"amount":0.00,"is_phone":1,"is_vip":-1,"can_tender_new":1,"count":7,"lastlogin_date":"三月 17, 2023","is_realname":1,"register_date":"三月 17, 2023","is_auto":"-1","register_type":1,"is_video":-1,"self_loan":-1,"phone":13124523346,"balance_amount":10000000.00,"name":"13124523346","lastlogin_ip":3056512971,"status":1},"repay_type":{"contents":"月还款本息\u003d贷款本金×月利率×（1 月利率）还款月数/[（1 月利率）还款月数-1]","name":"等额本息","remark":"","id":1}},"description":"OK"}
 </pre>
     </div>
     <!--css div popup end-->
@@ -445,7 +518,7 @@ InitiativeTender OK
         通过</a>
 
     <div id='div_pt4.3' class="popup_window">
-        <pre>pt4.3: {'recover_amount_yes_total': 0, 'isStartTime': 'yes', 'epage': 6, 'recover_amount_total': 0, 'recover_amount_wait_total': 0, 'page': 1, 'total_pages': 1, 'tender_amount_total': 1000.0, 'items': [{'recover_status': '-1', 'voucher_amt': '0.00', 'recover_principal_yes': '0.00', 'tenderId': '3440', 'serialno': '202301321111', 'recover_amount': 0, 'recover_count': '0', 'recover_interest_yes': 0, 'transfer_member_name': '', 'cancel_count': '0', 'trust_status': '-2', 'auto_status': '-1', 'id': '3440', 'loan_name': '数据库构造借款1', 'recover_principal': '0.00', 'transfer_member_id': '0', 'ind': '23031616414337506320', 'loan_id': '222', 'member_id': '20620', 'award_interest': 0.0, 'amount': '1000.00', 'status_name': '投标中', 'loan_member_id': '222', 'recover_prepayment_fee': '0.00', 'deposit_certificate': '-1', 'loan_member_name': '13130785533', 'transfer_status': '-1', 'member_name': '13124523346', 'recover_overdue_fee': '0.00', 'award_amount': '0.00', 'add_ip': '2130706433', 'recover_interest': '0.00', 'repay_type': '1', 'recover_count_yes': '0', 'add_time': '1678956103', 'recover_amount_yes': '0.00', 'loanId': '222', 'status': '-2'}], 'total_items': 1, 'isCert': '2'}
+        <pre>pt4.3: {'recover_amount_yes_total': 0, 'isStartTime': 'yes', 'epage': 6, 'recover_amount_total': 0, 'recover_amount_wait_total': 0, 'page': 1, 'total_pages': 1, 'tender_amount_total': 1000.0, 'items': [{'recover_status': '-1', 'voucher_amt': '0.00', 'recover_principal_yes': '0.00', 'tenderId': '3458', 'serialno': '202301321111', 'recover_amount': 0, 'recover_count': '0', 'recover_interest_yes': 0, 'transfer_member_name': '', 'cancel_count': '0', 'trust_status': '-2', 'auto_status': '-1', 'id': '3458', 'loan_name': '数据库构造借款1', 'recover_principal': '0.00', 'transfer_member_id': '0', 'ind': '23031715295249126376', 'loan_id': '222', 'member_id': '20776', 'award_interest': 0.0, 'amount': '1000.00', 'status_name': '投标中', 'loan_member_id': '222', 'recover_prepayment_fee': '0.00', 'deposit_certificate': '-1', 'loan_member_name': '13130785533', 'transfer_status': '-1', 'member_name': '13124523346', 'recover_overdue_fee': '0.00', 'award_amount': '0.00', 'add_ip': '2130706433', 'recover_interest': '0.00', 'repay_type': '1', 'recover_count_yes': '0', 'add_time': '1679038192', 'recover_amount_yes': '0.00', 'loanId': '222', 'status': '-2'}], 'total_items': 1, 'isCert': '2'}
 </pre>
     </div>
     <!--css div popup end-->
@@ -474,7 +547,7 @@ InitiativeTender OK
         <pre>pt5.1: 登录成功 {"status":200,"description":"登录成功"}
 开户  UserRegister OK
 充值结果  NetSave OK
-我的投资列表  {'recover_amount_yes_total': 0, 'isStartTime': 'yes', 'epage': 6, 'recover_amount_total': 0, 'recover_amount_wait_total': 0, 'page': 1, 'total_pages': 1, 'tender_amount_total': 11000.0, 'items': [{'recover_status': '-1', 'voucher_amt': '0.00', 'recover_principal_yes': '0.00', 'tenderId': '3441', 'serialno': '202301321111', 'recover_amount': 0, 'recover_count': '0', 'recover_interest_yes': 0, 'transfer_member_name': '', 'cancel_count': '0', 'trust_status': '-2', 'auto_status': '-1', 'id': '3441', 'loan_name': '数据库构造借款1', 'recover_principal': '0.00', 'transfer_member_id': '0', 'ind': '23031616414494372320', 'loan_id': '222', 'member_id': '20620', 'award_interest': 0.0, 'amount': '10000.00', 'status_name': '投标中', 'loan_member_id': '222', 'recover_prepayment_fee': '0.00', 'deposit_certificate': '-1', 'loan_member_name': '13130785533', 'transfer_status': '-1', 'member_name': '13124523346', 'recover_overdue_fee': '0.00', 'award_amount': '0.00', 'add_ip': '2130706433', 'recover_interest': '0.00', 'repay_type': '1', 'recover_count_yes': '0', 'add_time': '1678956105', 'recover_amount_yes': '0.00', 'loanId': '222', 'status': '-2'}, {'recover_status': '-1', 'voucher_amt': '0.00', 'recover_principal_yes': '0.00', 'tenderId': '3440', 'serialno': '202301321111', 'recover_amount': 0, 'recover_count': '0', 'recover_interest_yes': 0, 'transfer_member_name': '', 'cancel_count': '0', 'trust_status': '-2', 'auto_status': '-1', 'id': '3440', 'loan_name': '数据库构造借款1', 'recover_principal': '0.00', 'transfer_member_id': '0', 'ind': '23031616414337506320', 'loan_id': '222', 'member_id': '20620', 'award_interest': 0.0, 'amount': '1000.00', 'status_name': '投标中', 'loan_member_id': '222', 'recover_prepayment_fee': '0.00', 'deposit_certificate': '-1', 'loan_member_name': '13130785533', 'transfer_status': '-1', 'member_name': '13124523346', 'recover_overdue_fee': '0.00', 'award_amount': '0.00', 'add_ip': '2130706433', 'recover_interest': '0.00', 'repay_type': '1', 'recover_count_yes': '0', 'add_time': '1678956103', 'recover_amount_yes': '0.00', 'loanId': '222', 'status': '-2'}], 'total_items': 2, 'isCert': '2'}
+我的投资列表  {'recover_amount_yes_total': 0, 'isStartTime': 'yes', 'epage': 6, 'recover_amount_total': 0, 'recover_amount_wait_total': 0, 'page': 1, 'total_pages': 1, 'tender_amount_total': 11000.0, 'items': [{'recover_status': '-1', 'voucher_amt': '0.00', 'recover_principal_yes': '0.00', 'tenderId': '3459', 'serialno': '202301321111', 'recover_amount': 0, 'recover_count': '0', 'recover_interest_yes': 0, 'transfer_member_name': '', 'cancel_count': '0', 'trust_status': '-2', 'auto_status': '-1', 'id': '3459', 'loan_name': '数据库构造借款1', 'recover_principal': '0.00', 'transfer_member_id': '0', 'ind': '23031715295419286776', 'loan_id': '222', 'member_id': '20776', 'award_interest': 0.0, 'amount': '10000.00', 'status_name': '投标中', 'loan_member_id': '222', 'recover_prepayment_fee': '0.00', 'deposit_certificate': '-1', 'loan_member_name': '13130785533', 'transfer_status': '-1', 'member_name': '13124523346', 'recover_overdue_fee': '0.00', 'award_amount': '0.00', 'add_ip': '2130706433', 'recover_interest': '0.00', 'repay_type': '1', 'recover_count_yes': '0', 'add_time': '1679038194', 'recover_amount_yes': '0.00', 'loanId': '222', 'status': '-2'}, {'recover_status': '-1', 'voucher_amt': '0.00', 'recover_principal_yes': '0.00', 'tenderId': '3458', 'serialno': '202301321111', 'recover_amount': 0, 'recover_count': '0', 'recover_interest_yes': 0, 'transfer_member_name': '', 'cancel_count': '0', 'trust_status': '-2', 'auto_status': '-1', 'id': '3458', 'loan_name': '数据库构造借款1', 'recover_principal': '0.00', 'transfer_member_id': '0', 'ind': '23031715295249126376', 'loan_id': '222', 'member_id': '20776', 'award_interest': 0.0, 'amount': '1000.00', 'status_name': '投标中', 'loan_member_id': '222', 'recover_prepayment_fee': '0.00', 'deposit_certificate': '-1', 'loan_member_name': '13130785533', 'transfer_status': '-1', 'member_name': '13124523346', 'recover_overdue_fee': '0.00', 'award_amount': '0.00', 'add_ip': '2130706433', 'recover_interest': '0.00', 'repay_type': '1', 'recover_count_yes': '0', 'add_time': '1679038192', 'recover_amount_yes': '0.00', 'loanId': '222', 'status': '-2'}], 'total_items': 2, 'isCert': '2'}
 </pre>
     </div>
     <!--css div popup end-->
@@ -484,9 +557,9 @@ InitiativeTender OK
 
         <tr id='total_row'>
             <td>总计</td>
-            <td>13</td>
-            <td>13</td>
-            <td>0</td>
+            <td>19</td>
+            <td>16</td>
+            <td>3</td>
             <td>0</td>
             <td>&nbsp;</td>
         </tr>
@@ -521,8 +594,8 @@ InitiativeTender OK
                     radius : '60%',
                     center: ['50%', '60%'],
                     data:[
-                        {value:13, name:'通过'},
-                        {value:0, name:'失败'},
+                        {value:16, name:'通过'},
+                        {value:3, name:'失败'},
                         {value:0, name:'错误'}
                     ],
                     itemStyle: {
